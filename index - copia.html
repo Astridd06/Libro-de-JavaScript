@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style - copia.css">
+    <script src="script - copia.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="barra-mov">
+            <button id="first-front-btn">
+                <div>
+                    <svg>
+                        <polyline points="11 17 6 12 11 7"/>
+                        <polyline points="18 17 13 12 18 7"/>
+                    </svg>
+                </div>
+            </button>
+            <button id="prev-btn">
+                <div>
+                    <svg>
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </div>
+            </button>
+            <button id="next-btn">
+                <div>
+                    <svg>
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg> 
+                </div>
+            </button>
+            <button id="last-front-btn">
+                <div>
+                    <svg>
+                        <polyline points="13 17 18 12 13 7"/>
+                        <polyline points="6 17 11 12 6 7"/>
+                    </svg>
+                </div>
+            </button>
+            <button id="zoomIn-btn">
+                <div>
+                    <svg>
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                </div>
+            </button>
+            <button id="zoomOut-btn">
+                <div>
+                    <svg>
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+    
+    <div id="content">
+        <!--LIBRO-->
+        <div id="libro" class="libro">
+            <!--Papel 1-->
+            <div id="p1" class="papel" >
+                <div class="frente">
+                    <div id="portada">
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="marco-superior">
+                            <br>
+                            <span class="header1 push">Índice general</span> 
+                        </div>
+                        <div class="encabezado">
+            
+                            <div class="push3">
+                                <br>
+                                <span class="header2">Parte I - Hablemos de JavaScript </span>  
+                                <span class="text1"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+                            </div>
+
+                            <div class="push3">
+                                <span class="text3">Introducción </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6</span>
+                                <br>
+                            
+                                <span class="text4 push2">Sobre este libro </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6</span>
+                    
+                                <br>
+                                <span class="text4 push2">¿Qué necesito saber antes de empezar? </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6</span>
+                    
+                                <br>  
+                                <span class="text4 push2">¿Qué aprenderemos? </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  . . . . . . . . . . . 7</span>
+                    
+                                <br>  
+                                <span class="text4 push2">¿Qué no aprenderemos?</span>
+                                <span class="text4">. . . . . . . . . . . . .  . . . . . . . . . . . . . . . .  .  .  .  . . . . . . . . . . 7</span>
+                            </div>
+
+                            <div class="push3">
+                                <span class="text3">Capítulo 1 - JavaScript de hace 10 minutos </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  . 10</span>
+                                
+                                <br> 
+                                <span class="text4 push2">La historia de nuestra industria </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  . . . .  10</span>
+                                
+                                <br>  
+                                <span class="text4 push2">El largo camino del Developer</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  . .  11</span>
+                            </div>
+                    
+                            <div class="push3">
+                                <span class="text3">Capítulo 2 - Hola Mundo</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  . . . . . . 20</span>
+                    
+                                <br> <span class="text4 push2">Un mundo de máquinas</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  . . . . 20</span>
+                    
+                                <br>  
+                                <span class="text4 push2">Pensar como un programador</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  21</span>
+                    
+                                <br>  
+                                <span class="text4 push2">Pseudocódigo</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  .  . . . . . . . . 22</span>
+                            </div>
+
+                            <div class="push3">
+                                <span class="text3">Capítulo 3 - console.log(“Hola Mundo”);</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  . 29</span>
+                    
+                                <br> 
+                                <span class="text4 push2">JSHint</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  .  .  . . . . . .  . . . . . . . . 29</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Consola</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . .   .  .  .  .  .  .  .  .  .  .  . 29</span>
+                    
+                                <br>  
+                                <span class="text4 push2">Caracteres especiales </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . .  .  .  .  .  .  .   .  .  .  .  .  . 32</span>
+                    
+                                <br>  
+                                <span class="text4 push2">Comentarios</span>
+                                <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 33</span>
+                            
+                                <br>  
+                                <span class="text4 push2">Nombres de variables </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . .  .  .  .  .  .  .  .  .  .  .  .  .  . 33</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Tipos de variables </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . .  .  .  .  .  .  .  .  .  .  .  .  .  .  34</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Matemáticas Básicas </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  35</span>
+                
+                                <br>  
+                                <span class="text4 push2">Operadores de asignación </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . .  . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  36</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Interacción Básica con el Usuarios </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   38</span>
+                            </div>
+                          
+                            <div class="push3">
+                                <span class="header2">Parte II -  Mecánica del lenguaje </span>  
+                                <span class="text1">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  . 40</span>
+                            </div>
+
+                            <div class="push3">
+                                <span class="text3">Capítulo 4 - Comparadores </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  41</span>
+                                
+                                <br> 
+                                <span class="text4 push2">Operadores de Comparación </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  41</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Operadores Lógicos  </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  . . . 41</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Todo puede ser booleano </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  . 42</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Asignación por igualdad  </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  . 43</span>
+                                
+                                <br>  
+                                <span class="text4 push2">If </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 43</span>
+                                
+                                <br>  
+                                <span class="text4 push2">If Else </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 44</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Else if </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . . 44</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Switch </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  . . . . . . . . . . . . . . . . . 45</span>
+                                
+                                <br>  
+                                <span class="text4 push2">Operador Ternario </span>
+                                <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  .  .  .  .  .  .  .  .  .  . . . . . . . . . 46</span>
+                            </div>
+                        </div>
+                        <div class="pie push6">
+                            <strong>2</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!--Papel 2-->
+             <div id="p2" class="papel">
+                <div class="frente ">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        <br><br>
+                        <div class="push3">
+                            <span class="text3">Capítulo 5 - Bucles </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48</span>
+                            
+                            <br> 
+                            <span class="text4 push2">While </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48</span>
+                            
+                            <br>  
+                            <span class="text4 push2">For  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . 48</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Do While </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Break y Continue </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Errores comunes </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Usos Avanzados </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52</span>
+                        </div>
+                        
+                        <div class="push3">
+                            <span class="text3">Capítulo 6 - Números y flechas </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54</span>
+                            
+                            <br> 
+                            <span class="text4 push2">Numbers </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Math  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . 58</span>
+                
+                            <br>  
+                            <span class="text4 push2">Dates </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Benchmark </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Setters, problema resuelto </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64</span>
+                        </div>
+
+                        <br>
+                        <div class="push3">
+                            <span class="text3">Capítulo 7 - Cadenas de texto </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66</span>
+                            
+                            <br> 
+                            <span class="text4 push2">Propiedades </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66</span>
+                            
+                            <br>  
+                            <span class="text4 push2">Métodos  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . 66</span>
+                        </div>
+                
+                        <div class="push3">
+                            <span class="text3">Capítulo 8 - Arrays </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69</span>
+                            
+                            <br> 
+                            <span class="text4 push2">Manejo </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70</span>
+                            
+                            <br>  <span class="text4 push2">Propiedades  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71</span>
+                            
+                            <br>  <span class="text4 push2">Métodos  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72</span>
+                            
+                            <br>  <span class="text4 push2">Métodos Avanzados  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75</span>
+                            
+                            <br>  <span class="text4 push2">Arrays multidimensionales  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76</span>
+                        </div>
+                
+                        <div class="push3">
+                            <span class="text3">Capítulo 9 - Objetos  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77</span>
+                            
+                            <br> 
+                            <span class="text4 push2">Objetos Literales </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77</span>
+                            
+                            <br>  <span class="text4 push2">Manejo  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78</span>
+                            
+                            <br>  <span class="text4 push2">Métodos  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79</span>
+                            
+                            <br>  <span class="text4 push2">Métodos Avanzados  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82</span>
+                            
+                            <br>  <span class="text4 push2">Usos Especiales  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83</span>
+                
+                            <br>  <span class="text4 push2">Estructuras de datos </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84</span>
+                        </div>
+                
+                        <div class="push3">
+                            <span class="text3">Capítulo 10 - Funciones  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85</span>
+                            
+                            <br> 
+                            <span class="text4 push2">Manejo </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85</span>
+                            
+                            <br>  <span class="text4 push2">Argumentos y parámetros  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85</span>
+                            
+                            <br>  <span class="text4 push2">Retorno  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86</span>
+                            
+                            <br>  <span class="text4 push2">Anidación  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91</span>
+                            
+                            <br>  <span class="text4 push2">Ámbito (Scope)  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92</span>
+                
+                            <br>  <span class="text4 push2">Funciones Anónimas </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92</span>
+                
+                        <br>  <span class="text4 push2">Recursión </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94</span>
+                
+                        <br>  <span class="text4 push2">Callbacks </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95</span>
+                        </div>
+                    </div>
+                    <div class="pie2 push9">
+                        <strong>3</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atras">
+                <div class="atras-content">
+                    <div class="encabezado">
+                        <div class="push3">
+                            <br>  <br>  
+                            <span class="text4 push2">Asincronía </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97</span>
+                       
+                            <br>  
+                            <span class="text4 push2">Documentar </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100</span>
+                        </div>
+                
+                        <div class="push3">
+                            <span class="header2">Parte III - Web dinámica y conectada</span>  
+                            <span class="text1">. . . . . . . . . . . . . . . . . . . . . . . 101</span>
+                        </div>
+                
+                        <div class="push3">
+                            <span class="text3">Capítulo 11 - Hackeando HTML y CSS </span>
+                            <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . 102</span>
+                            
+                            <br> 
+                            <span class="text4 push2">BOM (Browser Object Model) </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span>
+                            <span class="text6 push2">102</span>
+                            
+                            <br>  <span class="text4 push2">DOM </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106</span>
+                            
+                            <br>  <span class="text4 push2">Alterando el DOM  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110</span>
+                            
+                            <br>  <span class="text4 push2">Eventos  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112</span>
+                            
+                            <br>  <span class="text4 push2">Propagación (Capturing y Bubbling)   </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119</span>
+                        </div>
+                
+                        <div class="push3">
+                            <span class="text3">Capítulo 12 - AJAX y más AJAX </span>
+                            <span class="text4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span>
+                            <span class="text5 push2">121</span>
+                            
+                            <br> 
+                            <span class="text4 push2">Entendiendo HTTP/s </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121</span>
+                            
+                            <br>  <span class="text4 push2">Trabajando con APIs </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122</span>
+                            
+                            <br>  <span class="text4 push2">Peticiones AJAX  </span>
+                            <span class="text4"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123</span>
+                        </div>
+                    </div>
+                        <div class="pie">
+                            <strong>4</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--Papel3-->
+             <div id="p3" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="marco-superior">
+                            <br><br>
+                            <h1 class="push">Parte I - Hablemos de JavaScript</h1>
+                        </div>
+                        <div class="encabezado">
+                            <h2>Introducción</h2>
+                            <br>
+                            <h3>Sobre este libro</h3>
+                            <br>
+                            <p>Bienvenidos al fascinante mundo de JavaScript: un lenguaje que ha transformado la forma en que interactuamos con la web y que continúa desafiando los límites de la creatividad y la innovación. Como estudiantes ávidos de conocimiento en el vasto universo del desarrollo web, nos embarcamos en este viaje con una mezcla de emoción y determinación.</p>
+                            <br>
+                            <p>Este libro no pretende ser simplemente otro recurso más en nuestra búsqueda de dominar JavaScript. En cambio, aspira a convertirse en ese compañero confiable que nos acompaña en cada paso del camino, desde los conceptos básicos hasta las técnicas más avanzadas. A través de ejemplos prácticos, explicaciones accesibles y una dosis saludable de humor, esperamos ofrecerte una experiencia de aprendizaje memorable y gratificante.</p>
+                            <br>
+                            <p>Prepárate para sumergirte en el fascinante mundo de JavaScript, donde cada línea de código es una oportunidad para la creatividad y la innovación. ¡Que este libro sea el comienzo de un viaje emocionante hacia el dominio de uno de los lenguajes más apasionantes del desarrollo web!</p>
+                            <br>
+                            <h3>¿Qué necesito saber antes de empezar?</h3>
+                            <br>
+                            <p>No es necesario tener experiencia programando, pero si que es importante tener claro el contexto de cómo se hacen páginas web estáticas, ya que en la parte III nos centraremos en la manipulación dinámica del DOM y las llamadas AJAX</p>
+                            <br>
+                            <p>No se extenderá mucho acerca de HTML y CSS, por lo que se espera que el lector ya tenga cierto conocimiento adquirido. Aunque su nivel de conocimientos y experiencia sea relativamente bajo, se ha procurado evitar que esto sea un freno a su aprendizaje en JavaScript.</p>
+                            <br>
+                            <h3>¿Qué aprenderemos?</h3>
+                            <br>
+                            <ul class="push">
+                                <li>Pseudocódigo.</li>
+                                <li>A pensar como un programador.</li>
+                                <li>Trabajar fluidamente con funciones.</li>
+                                <li>Dominar las bases de JavaScript (estructuras del lenguaje).</li>
+                                <li>Ajax y sus peticiones.</li>
+                                <li>Manipulación dinámica del DOM.</li>
+                            </ul>        
+                            <br><br><br><br>
+                    </div>
+                        <div class="pie2 push9">
+                            <strong>5</strong>
+                        </div>
+                    </div>
+                </div>
+          
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <h3>¿Qué no aprenderemos?</h3>
+                            <br>
+                            <p>JavaScript es un universo inmenso que va creciendo a pasos agigantados con expansiones. Recuerda que la idea es sentar las bases del lenguaje, por lo que no veremos cosas como:</p>
+                            <br>
+                                <p><b>Bases de datos</b></p>
+                                <p>Ya sean SQL o NoSQL, es algo que no pretendemos tratar en este libro.</p>
+                                <br>
+                                <p><b>Paradigmas POO, Funcional, etc…</b></p>
+                                <p >Hablaremos algunos conceptos interesantes de los diversos paradigmas que ofrece JavaScript, pero no iremos más allá.</p> 
+                                <br>
+                                <p><b>HTML5 APIs</b></p>
+                                <p>Aunque hablaremos sobre cosas como LocalStorage, queda muy lejos de las bases de JavaScript sobre las que queremos centrarnos.</p>
+                                <br>
+                                <p><b>Regex (Expresiones Regulares)</b></p>
+                                <p>Es algo muy útil en el día a día, y será mencionado, pero solo por encima para entender como enfrentarnos a ello como desarrolladores.</p>  
+                                <br>
+                                <p><b>Patrones de diseño (Decorator, Façade…)</b></p>
+                                <p>Son muchos los patrones que podemos aplicar a JavaScript para nuestro código, pero esto también queda muy lejos de nuestros objetivos.</p>  
+                                <br>
+                                <p><b>Testing</b></p>
+                                <p>Uno de los pilares del código, es hacer testing o seguir filosofías como TDD o TBD. Pero para alguien que empieza en este mundo, creemos que sería un freno a tu aprendizaje.</p>
+                                <br>
+                                <p><b>Git y Github</b></p>
+                                <p>Otra de las cosas sin las que uno no puede considerarse un desarrollador de verdad, si no sabe manejarse con fluidez en ello.</p>  
+                                <br>
+                                <p><b>Frameworks Angular, React, Polymer, Backbone, etc…</b></p>
+                                <p>Quedarán fuera de este libro pero utilizaremos el framework de JavaScript más popular y veterano, Vanilla-js</p>   
+                                <br>
+                                <p><b>Librerías Jquery, Mathjs, Momments.js...</b></p>
+                                <p>La idea de este libro es trabajar sobre JavaScript, al estilo de Douglas Crockford. Por eso no trabajaremos con JQuery directamente, ni con ninguna otra librería, aunque si recomendaremos otras muchas librerías.</p>  
+                                <br>
+                                <p><b>ECMAScript 6, ECMAScript 7</b></p>
+                                <p>Aunque hablaremos de ciertas cosas que ha traído consigo ECMAScript 6, sin embargo nos centraremos en el clásico ECMAScript 5.1.</p> 
+                        </div>
+                    <div class="pie push6">
+                        <strong>6</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <!--papel4-->
+            <div id="p4" class="papel">
+                <div class="frente">
+                    <div class="encabezado">
+                        <br><br>
+                    <p><b>Node.js</b></p>
+                    <p>Node.js tiene todo el potencial de JavaScript, sin las restricciones del navegador, donde puedes crear desde servidores http, hasta cosas tan alucinantes como robots.</p>
+                    <br>
+                    <p>Node.js da para una colección de libros por si mismo, y por ello queda muy lejos de nuestros objetivos.</p> 
+                    <br>
+                    <p >De paso desmitificar algunas cosas:</p> 
+                    <br>
+                    <p ><b>Matemáticas</b></p>
+                    <p >Programar es hacer magia con máquinas, las matemáticas son opcionales.</p> 
+                    <br>
+                    <p ><b>Matemáticas Avanzadas, Estadística, etc…</b></p>
+                    <p >Para dominar los conocimientos y las técnicas de JavaScript, solo necesitas saber sumar, restar, dividir y multiplicar.</p> 
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                    <div class="pie2 push6">
+                        <strong>7</strong>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="marco-superior">
+                            <br><br>
+                            <h1 class="push">Capítulo 1 - JavaScript de hace 10 minutos</h1>
+                        </div>
+                        <div class="encabezado">
+                            <br>
+                            <h2>La historia de nuestra industria</h2>
+                            <br>
+                            <div class="dflex">
+                                <img height="60px" width="60px" src="https://cdn-icons-png.flaticon.com/128/1245/1245149.png" alt="">
+                                <h3 class="push2 push5">Lecturas recomendadas:</h3>
+                            </div>
+                            <br>
+                            <ul class="push4"> 
+                                <li class="push2"><a class="text7" href="https://www.youtube.com/watch?v=9hIQjrMHTv4">History of the Internet by Melih Bilgil</a></li>
+                                <li class="push2"><a class="text7" href="https://www.youtube.com/watch?v=Dxcc6ycZ73M">What is the Internet? by Code.org</a></li>
+                            </ul>
+                            <br>
+                            <p>La Evolución de la web desarrollada por el equipo de Google Chrome es un portal que nos permite visualizar los hitos más importantes en la historia de la web desde 1991 hasta 2013.</p>
+                            <br>
+                            <h3>1991 - 1993</h3>
+                            <p>Los primeros años de la web pasan en mucha calma. Se crea HTTP y HTML1 para que empezara el mundo web. El primer navegador web gráfico, Mosaic.</p>
+                            <br>
+                            <h3>1994 - 1995</h3>
+                            <p>Surgen los tres navegadores principales de la época; Netscape Navigator, Opera e Internet Explorer. Se oficializa HTML2 y rápidamente es sustituido por HTML3.</p>
+                            <br>
+                            <p>Por primera vez se pueden usar cookies, por aquel entonces, internet era mucho más salvaje y menos regulado. En un intento firme para hacer la web más segura, y permitir cosas tan futuristas por aquel entonces como el comercio electrónico, se implementa la capa SSL y asi se crea el HTTPS, IMAPS, POP3S, SMTPS, FTPS, etc</p>
+                            <br>
+                            <p>Corría el año 1995, cuando Brendan Eich creó Mocha, a petición de Netscape con la idea de tener algún lenguaje de programación disponible en la web (lado de cliente). Luego se renombraría como LiveScript, para finalmente ser JavaScript.</p>
+                            <br>
+                            <p>Además a lo largo de ese año, comienza una escalada de problemas para todos los desarrolladores del mundo, conocido como “Browser Wars” que hasta hoy en día, seguimos sufriendo sus efectos.</p>
+        
+                        </div>
+                        <div class="pie">
+                            <strong>8</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+             <!--papel5-->
+             <div id="p5" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p>Donde cada navegador decide hacer las implementaciones de los distintos componentes que vendrán en los años venideros de manera diferente, lo que obligaba a los webmasters a tener que hacer su código compatible para todos los navegadores al mismo tiempo, replicando esfuerzos y entorpeciendo el trabajo diario. Si a esto le sumamos que por aquel entonces los navegadores no se autoactualizaban, llegamos así a una situación realmente compleja.</p>
+                            <br>
+                            <p>Para intentar recordar un poco como era navegar entonces, recordarán la usabilidad de la web en aquella época, con contadores de visitas, gifs animados y fotografías pixeladas. Era la infancia de la web, y aún se puede recordar en sitios como <a href="http://theworldsworstwebsiteever.com/">The world’s Worst Website Ever.</a> </p>
+                            <br><br>
+                            <img width="190px" height="120px" class="push7" src="https://www.farmhousecreative.net/wp-content/uploads/2016/04/worst-website-evar.png" alt="">
+                            <br><br><br>
+                            <p>En esta época, todavía se maquetaban las paginas web dentro de tablas. Conceptos como hojas de estilos estaban muy lejos de ser viables. Van surgiendo tecnologías claves para suplir carencias básicas de interacción, interconectividad y visualización</p>
+                            <br>
+                            <p>En esta época surgen tecnologías como los Applets de Java, Flash, etc.</p>
+                            <br>
+                            <p>XML se convierte en el formato de intercambio de datos más extendido.</p>
+                            <br>
+                            <p>En cuanto a HTML, sigue evolucionando, pasando rápidamente a la version 3.1 y 4, permitiendo la separación de la parte visual con CSS2. Por primera vez contenido y disposición gráfica de la información se separan.</p>
+                            <br>
+                            <p>Empieza la era dorada de Flash. Por el momento CSS no es nada comparado con las capacidades de Flash.</p>
+                            <br>
+                            <p>Mosaic muere en su versión 2.1, Internet empieza a ser un mercado potencial. Se crean los primitivos sitios web de Google, Yahoo!, Altavista y Amazon.</p>
+                        </div>
+
+                       
+                        <div class="pie2">
+                            <strong>9</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/2550/2550235.png" alt="">
+                                <h3 class="push2 push8">Web Archive:</h3>
+                            </div>
+                            <ul class="push4"> 
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/19981111184551/http://google.com/">Google Prototipo en 1998</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/19981202230410/http://www.google.com/">Google Beta en 1998</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/19981212012532/http://amazon.com/">Amazon en 1998</a></li>
+                            </ul>
+                            <br>
+                            <h3>1999 - 2007</h3>
+                            <p>Fueron tiempos locos… con el cambio de siglo, Internet se consolido creando la famosa <a href="https://es.wikipedia.org/wiki/Burbuja_punto_com">“Burbuja puntocom”</a> que empezó a cocinarse entorno a 1997, pero que termino de explotaren 2001-2002.</p>
+                            <br>
+                            <p>Sobrevivimos al <a href="https://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2000">efecto 2000</a>, con 305,09 millones de usuarios.
+                            <br>
+                            <p>Internet Explorer introduce ActiveX en la web. Se introducen los primero borradores de Ajax. En 2006 se introduce en los navegadores XMLHTTPRequest2 y empieza la navegación asíncrona, lo que permite crear webs realmente dinámicas, que no necesitan una gran renderización en el lado del servidor</p></p>
+                            <br>
+                            <p>Esto hace posible la mejora en el desarrollo de las primeras plataformas de redes sociales (Web 2.0). Poco a poco en esta época, el peso de JavaScript va creciendo, ya que gran parte del procesamiento pronto se hará en el lado del cliente.</p>
+                            <br>
+                            <p>En la parte más visual se empieza a introducir de manera experimental conceptos como SVG y Canvas.</p>
+                            <br>
+                            <p>Aparecen en escena Facebook, Twitter, Linkedin, Youtube, etc… creando el embrión de lo que luego serían otras redes sociales.</p>
+                            <br>
+                            <p>Aparece JQuery, una librería para JavaScript que cambió para siempre la forma de interactuar entre JavaScript y HTML/CSS. En los años venideros, muchos maquetadores utilizarán esta librería como puerta de entrada a JavaScript.</p>
+                            <br>
+                            <p>La época dorada del PHP (pre-Wordpress), como motor de innovación para la web con proyectos como PHPBB, llegará a su fin.</p>
+                            <br>
+                            <p>Con la llegada de Wordpress (2003), Joomla (2005), etc… la web sufrirá en años sucesivos un cambio drástico.</p>
+                            <br>
+                            <p>Los proyectos se dividirán en aquellos que puedan ser realizados con un CMS (principalmente en PHP) y otros que necesitarán de un trabajo a medida.</p>
+                            <br>
+                            <p>El mítico Netscape se despide para siempre con la versión 9 y nace Firefox.</p>
+                            <br>
+                            <p>Termina 2007 con 1.500 millones de usuarios en Internet.</p>
+                        </div>
+                        <div class="indice2">
+                            <button id="radio2"></button>
+                        </div>
+                        <div class="pie">
+                            <strong>10</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+             <!--papel6-->
+             <div id="p6" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/2550/2550235.png" alt="">
+                                <h3 class="push2 push8">Web Archive:</h3>
+                            </div>
+                            <ul class="push4"> 
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20000229081105/http://www.amazon.com/exec/obidos/subst/home/home.html">Amazon en 2000</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20001027222150/http://www.google.com/">Google en 2000</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20051114081503/http://www.google.com">Google en 2005</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20050213040632/http://facebook.com/"> Facebook en 2005 (AboutFace)</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20051020000116/http://www.facebook.com"> Facebook en 2005</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20051126094753/http://www.amazon.com/exec/obidos/subst/home/home.html"> Amazon en 2005</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20050428014715/http://www.youtube.com/">Youtube en 2005</a></li>
+                            </ul>
+                            <br>
+                            <h3>2008 en adelante…</h3>
+                            <p>Empieza una nueva era… lo nativo va poco a poco desterrando las soluciones arcaicas y obsoletas como Applets, Flash, ActiveX…</p>
+                            <br>
+                            <p>HTML5 y CSS3 dan el empujón que hacía falta para que la web despegara. <a href="https://es.wikipedia.org/wiki/Google_Chrome">Chrome</a> nace justo aprovechando estos cambios de paradigma.</p>
+                            <br>
+                            <p>Todo aquello que podia hacerse con Flash, ahora podrá hacerse mejor y más rápido de manera nativa juntando las tres fuerzas más imponentes de la web, CSS3, HTML5 y JavaScript.</p>
+                            <br>
+                            <p>Se abre el desarrollo hacia una web mucho más semántica con filosofías responsive, y empieza la era del “Internet en la palma de la mano” con los smartphones.</p>
+                            <br>
+                            <p>La popularidad y capacidad de la nueva Internet ocasionarán un cambio de paradigma que trastocará todo. Poco a poco, las aplicaciones de escritorio serán sustituidas por aplicaciones web, ocasionando una migración masiva de desarrolladores hacia el trio de la web (HTML, CSS y JavaScript).</p>
+                            <br>
+                            <p>A lo largo de los años siguientes, serán muchas las empresas que decidan dar soporte a JavaScript en sus productos para asegurarse acceder a una masa crítica de programadores, este es el caso de los scripts para Photoshop, Unity, etc…</p>
+                            <br>
+                            <p>También veremos que la complejidad de conseguir desarrolladores de APPs Nativas (Java, Swift y Objetive-c) forzará a que lleguen los sistemas híbridos, donde JavaScript, HTML y CSS serán todo el conocimiento necesario para entrar en el mundo de los smartphones, gracias a soluciones como PhoneGap.</p>
+                            <br>
+                            <p>La fiebre por extender JavaScript, irá mucho más allá de lo imaginado y encontrará en Node.js la pieza que faltaba para encajar en ciertos entornos como las aplicaciones de escritorio, o la gestión de redes.</p>
+                            <br>
+                            <p>Todo ello, permite que JavaScript deje de ser un lenguaje exclusivo de la web para ir mucho</p>
+                            
+                        </div>
+                                                <button id="radio1"></button> 
+                                                <button id="radio3"></button>
+                                                <button id="radio4"></button>
+                                                <button id="radio5"></button>
+                                                <button id="radio6"></button>
+                                                <button id="radio7"></button>
+                                                <button id="radio8"></button>
+                                                <button id="radio9"></button>
+                                                <button id="radio10"></button>
+                                               <button id="radio11"></button>
+                        <div class="pie2">
+                            <strong>11</strong>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="atras">
+                    <div class="atras-content ">
+                        <div class="encabezado">
+                            <br><br>
+                            <br>
+                            <p>más allá, adentrándose incluso en el desarrollo del Internet of Things (IoT) y la Robótica con librerías como Cyclon.js, J5, etc…</p>
+                            <br>
+                            <p>Internet de alta velocidad y la fibra óptica supusieron una gran mejora en las comunicaciones, lo que ayudó a crear una Internet mucho más rica en contenido. En 2011 ya se manejaban 27.483 PB/mes,frente a los 10.000 PB/mes de 2007. La logística y las telecomunicaciones jugarán un papel importantisimo en el futuro desarrollo de nuestro planeta.</p>
+                            <br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/2550/2550235.png" alt="">
+                                <h3 class="push2 push8">Web Archive:</h3>
+                            </div>
+                            <ul class="push4"> 
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20101130235215/http://www.google.com/">Google en 2010</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20151215000203/http://www.google.com/">Google en 2015</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20101126032341/http://www.amazon.com/">Amazon en 2010</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20151127000839/http://www.amazon.com/">Amazon en 2015</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20100914234459/http://www.youtube.com/">Youtube en 2010</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20151115000036/https://www.youtube.com/">Youtube en 2015</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20100110004754/http://www.facebook.com/">Facebook en 2010</a></li>
+                                <li class="push2"><a class="text7" href="http://web.archive.org/web/20150731235552/https://facebook.com/">Facebook en 2015</a></li>
+                            </ul>
+                            <br>
+                            <h2>El largo camino del Developer</h2>
+                            <br>
+                            <p>Este esquemático mapa mental, puede ayudaros a visualizar lo que esta ocurriendo hoy en día en la web, y comprender como los profesionales de la industria, hemos ido migrando de nombres y funciones hasta donde estamos ahora mismo, que no es definitivo y lógicamente seguirá evolucionando.</p>
+                            <br>
+                            <h3>Una historia de evolución</h3>
+                            <br>
+                            <p>Muy lejos quedan los tiempos en los que ser Webmaster era suficiente para gestionar todo lo que tenia que ver con la web, desde programación a gestión de los usuarios, pasando por el primitivo Marketing de la época</p>
+                            <br>
+                            <p>La web fue evolucionando rápidamente a nivel de desarrollo, aquel webmaster multiusos, paso a dividirse en dos grandes y muy diferenciados roles:</p>
+                            <br>
+                            <p><b>Diseño</b></p>
+                            <p>Encargado de hacer los diseños básicos con algún programa de la suit de Adobe o similar.</p>
+                            <br>
+                            <p>En ocasiones también se encargaba de la parte de Flash, para crear animaciones y transiciones.</p>
+                        </div>
+                        <div class="pie">
+                            <strong>12</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel7-->
+             <div id="p7" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p><b>Programación</b></p>
+                            <p>Realizaba todas las tareas de desarrollo: JavaScript, PHP, Bases de datos, formularios, hosting, etc… Las webs de entonces no eran muy complejas, gran parte de la lógica se hacía en el servidor y el verdadero reto era lograr los objetivos con la tecnología de la época.</p>
+                            <br>
+                            <p>Aquellos eran los viejos tiempos… era como construir los primeros aviones. Materiales como la tela y madera servían para construir todo el entramado del fuselaje, un motor potente, unos controles sencillos y ya estabas volando</p>
+                            <br>
+                            <p>A medida que la web fue evolucionando, su complejidad también creció exponencialmente, y como consecuencia inmediata, la programación se dividió en dos grandes áreas</p>
+                            <br>
+                            <p><b>Diseñador/Maquetador</b></p>
+                            <p>Antes con el diseño era suficiente. Pero poco a poco, el diseñador va asumiendo competencias básicas, para descargar de trabajo meramente estático a los programadores, que se centrarían en hacer la parte menos visual.</p>
+                            <br>
+                            <p>Ahora el diseñador tomará la iniciativa y convertirá los diseños en HTML y CSS.</p>
+                            <br>
+                            <p><b>Front-End developer</b></p>
+                            <p>Algunos desarrolladores, deciden que asumirán las funciones de interacción del lado del cliente (JavaScript) y dejando el servidor. En muchas ocasiones, el diseño quedará fuera de sus competencias.</p>
+                            <br>
+                            <p>A medida que JavaScript dejó de usarse solo para interpretación y empezó a ganar fuerza frente al renderizado total de datos en el servidor, se migrará de JQuery hacia JavaScript nativo y a las librerías MV* como Angular, Backbone, Ember…</p>
+                            <br>
+                            <p><b>Back-End developer</b></p>
+                            <p>El desarrollo en el servidor también sufrirá muchos cambios. Poco a poco, se migrará de proyectos web que basan la mayor parte de su programación en el renderizado de HTML, CSS y JavaScript, desde el servidor a la creación de <a href="https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones">APIs</a>, donde prima el aislamiento del procesamiento de la información.</p>
+                            <br>
+                            <p>En cuanto a lenguajes de programación, poco a poco se irá viendo que más y más sistemas y lenguajes se esforzarán por entrar en el mundo de internet con nuevas librerías y arquitecturas. Apache logra hacer de puente para muchos, pero a la larga surgirán alternativas.</p>
+                            <br>
+                            <p>Mientras tanto, muchas iniciativas asaltan la web con ideas innovadoras como desarollo ágil, eXtreme Programming (XP).</p>
+                            <br>
+                            <p>El software libre acabó convirtiéndose en el standard dentro del sector gracias almítico LAMP.</p>
+                            <br>
+                            <p>Las bases de datos también evolucionarán y tendremos que convivir con dos maneras de</p>
+                        </div>
+                        <div class="pie2">
+                            <strong>13</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p>entender el almacenaje, SQL y NoSQL. Lo que supondrá una dificultad añadida para el desarrollo de nuevos proyectos.</p>
+                            <br>
+                            <p>Otras áreas como la <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial">inteligencia artificial</a> y <a href="https://es.wikipedia.org/wiki/Big_data">Big data</a> irán poco a poco demandando su hueco, por lo que dentro del backend iremos viendo nuevas áreas de especialización.</p>
+                            <br>
+                            <p><b>Full Stack Developer</b></p>
+                            <p>Surge una nueva clase de desarrolladores, que por avatares del destino no se encasillan en el back o en el front.</p>
+                            <br>
+                            <p>Y serán capaces de adentrarse en ambos mundos y suplir las necesidades de los equipos en estos dos frentes. Cada Full Stack Developer será diferente, cada uno será especialista en unas areas, y en otras pasará de largo</p>
+                            <br>
+                            <p>Mantenerse al día en la industria es cada vez más difícil. En cuestión de unos pocos años pasamos de construir aquellos aviones básicos con tela y madera a desarrollar cohetes capaces de surcar una galaxia</p>
+                            <br>
+                            <p>Nuestra industria se vio totalmente superada. El crecimiento de Internet no era ni de lejos acorde a la cantidad de profesiones capaces de suplir esta demanda. Esto creó un efecto llamada que desató la llegada de muchos nuevos desarrolladores, que no sienten esta profesión con la pasión de aquellos que empezamos a construir un Internet mejor, nosotros realmente creíamos en lo que hacíamos y como lo hacíamos.</p>
+                            <br>
+                            <p>La asimilación de programadores obsoletos de otras áreas y ajenos a la industria, condicionará mucho la manera de trabajar, especialmente con JavaScript</p>
+                            <br>
+                            <p>Básicamente podría decirse que esta industria se divide entre artesanos y mercenarios</p>
+                            <br>
+                            <h2>Una realidad caótica.</h2>
+                            <br>
+                            <p>A medida que esto crece, las barreras para entrar en la industria o cambiar de rol dentro de ella, aumentan.</p>
+                            <br>
+                            <p>Para hacernos una ligera idea de lo que necesitamos saber en las diversas áreas, os dejo este esquema.</p>
+                            <br>
+                            <h3>Cosas que todos deberíamos saber</h3>
+                            <br>
+                            <ul>
+                                <li>Manejo de Git/Github.</li>
+                                <li>Entender como funciona HTTP y las APIs.</li>
+                                <li>Manejo básico de terminal/consola.</li>
+                                <li>Trabajar con FTP.</li>
+                                <li>Manejo de SSH.</li>
+                            </ul>
+                        </div>
+                        <div class="pie">
+                            <strong>14</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel8-->
+             <div id="p8" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <h3>¿Qué se espera de un Front-End Junior?</h3>
+                            <br>
+                            <ul>
+                                <li>Conocimiento bueno de HTML5.</li>
+                                <li>Conocimiento bueno de CSS3.</li>
+                                <li>Bases de testing.</li>
+                                <li>Llamadas AJAX.</li>
+                                <li>Trabajo con librerías como JQuery.</li>
+                                <li>Conocimientos básicos de alguna librería MV*.</li>
+                            </ul>
+                            <br>
+                            <h3>¿Qué se espera de un Front-End Senior?</h3>
+                            <br>
+                            <ul>
+                                <li>Lo mismo que de un Junior, pero en mayor profundidad y con experiencia.</li>
+                                <li>Gestión de tareas Gulp, Grunt, etc….</li>
+                                <li>Preprocesadores CSS.</li>
+                                <li>Trabajo con Flexbox.</li>
+                                <li>Dominio del desarrollo Responsive.</li>
+                                <li>Gestión de dependencias RequireJS, Webpack, Browsefy, etc...</li>
+                                <li>Dominio/manejo fluido de un framework MV*.</li>
+                                <li>Conocimientos de Node.js.</li>
+                                <li>Conocimientos muy sólidos de JavaScript Patrones de diseño, ES6, etc...</li>
+                                <li>Conocimientos avanzados sobre HTML5 APIs.</li>
+                                <li>Buenas prácticas (documentación, refactorización, etc…).</li>
+                            </ul>
+                            <br>
+                            <h3>¿Qué se espera de un Back-End Junior?</h3>
+                            <br>
+                            <ul>
+                                <li>Conocimientos sólidos de programación (Algorítmia, lógica, etc…).</li>
+                                <li> Saber trabajar con bases de datos relacionales y/o no relacionales.</li>
+                                <li> Bases de una buena arquitectura (modularidad, microservicios, etc…).</li>
+                                <li> Bases de nuevas arquitecturas NoBackend, Serverless, WebSockets, etc…</li>
+                                <li> Desarrollo de aplicaciones seguras.</li>
+                                <li> Conocimientos de protocolos como OAuth, HTTP (server side), etc..</li>
+                                <li> Al menos un lenguaje de programación con un buen nivel.</li>
+                                <li> Trabajar con fluidez con un motor de plantillas.</li>
+                                <li> Bases de HTML5 y CSS3</li>
+                            </ul>
+                            <br>
+                            <h3>¿Qué se espera de un Back-End Senior?</h3>
+                            <br>
+                            <ul>
+                                <li>Lo mismo que de un Junior, pero en mayor profundidad y con experiencia.</li>
+                                <li>Despliegue en Servidores y servicios en la nube.</li> 
+                                <li>Al menos dos lenguajes de programación de Backend.</li>
+                                <li>Buen nivel de JavaScript.</li>
+                                <li>Bases de Node.js para la automatización Yeoman, Gulp, etc..</li>
+                                <li>Bases de la Integración continua Jenkins, TravisCI, etc…</li>
+                            </ul>
+                        </div>
+                        <div class="pie2">
+                            <strong>15</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <li>Experiencia con varias bases de datos diferentes.</li>
+                            <li>Gestión de cacheo Nginx, etc…</li>
+                            <li>Creación de APIs.</li>
+                            <li>Integración con otras plataformas y servicios.</li>
+                            <li>Shell Scripting.</li>
+                            <br>
+                            <h2>En el centro del huracán: JavaScript</h2>
+                            <br>
+                            <div class="dflex">
+                                <img height="60px" width="60px" src="https://cdn-icons-png.flaticon.com/128/1245/1245149.png" alt="">
+                                <h3 class="push2 push5">Lecturas recomendadas:</h3>
+                            </div>
+                            <br>
+                            <ul>
+                                <li><a href="https://segment.com/blog/the-deep-roots-of-js-fatigue/">The Deep Roots of Javascript Fatigue by Calvin French-Owen</a></li>
+                                <li><a href="http://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results">El estado del desarrollo Front-End en 2015 por Ashley Nolan</a></li>
+                                <li><a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.3zltfkmkn">How it feels to learn JavaScript in 2016 by Jose Aguinaga</a></li>
+                                <li><a href="http://stateofjs.com/">State of js</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=T8Qb2fVE0rU&feature=player_embedded">How to avoid JavaScript fatigue and sleep well at night by Josh Mock</a></li>
+                                <li><a href="http://blog.codinghorror.com/the-magpie-developer/">The Magpie Developer</a></li>
+                                <li><a href="https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.62up3vtl1">The Sad State of Web Development</a></li>
+                                <li><a href="https://www.reddit.com/r/programming/comments/40rwrk/a_response_to_the_sad_state_of_web_development/">A response to The Sad State of Web Development — Its not about Javascript really</a></li>
+                                <li><a href="http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/">How one developer just broke Node, Babel and thousands of projects in 11 lines of JavaScript</a></li>
+                                <li><a href="http://developer.telerik.com/featured/left-pad-indicative-fragile-javascript-ecosystem/">Is left-pad Indicative of a Fragile JavaScript Ecosystem?</a></li>
+                                <li><a href="http://developer.telerik.com/topics/web-development/overcoming-javascript-fatigue/">>Overcoming JavaScript Fatigue</a></li>
+                                <li><a href="http://www.xataka.com/servicios/y-si-el-software-open-source-desapareciera">¿Y si el software Open Source desapareciera?</a></li>
+                            </ul>
+                            <br>
+                            <p>Para los desarrolladores de JavaScript, todo ha sido complicado, ya que el crecimiento exponencial de las necesidades de todo Internet ha pasado por este lenguaje.</p>
+                            <br>
+                            <p>Al ser el único lenguaje que se puede ejecutar en el navegador, muchos desarrolladores han tenido que pasar por el aro y aprenderlo.</p>
+                            <br>
+                            <p>Otros muchos, han tenido que crear librerías y frameworks para intentar hacerlo más sencillo y ágil.</p>
+                            <br>
+                            <p>Estos y más factores, han hecho que lleguemos a un punto de no retorno que oficialmente se conoce como <a href="https://twitter.com/search?q=jsfatigue&src=typd">JavaScript Fatigue.</a></p>
+                        </div>
+                        <div class="pie">
+                            <strong>16</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel9-->
+             <div id="p9" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        <img height="420px" width="300px" src="https://www.commitstrip.com/wp-content/uploads/2015/09/Strip-Prendre-le-train-en-marche-650-finalenglish1.jpg" alt="">
+                    </div>
+                        <div class="pie2">
+                            <strong>17</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p>Durante estos años JavaScript se hace adulto de la mano de Ryan Dahl cuando se libera Nodejs.</p>
+                            <br>
+                            <p>Node.js supone un antes y un después en toda la industria. No solo para los desarrolladores de JavaScript, ya que Node.js no es únicamente un entorno para desarrollar <a href="https://es.wikipedia.org/wiki/Servidor_web">servidores de internet clásicos (Http)</a>. Ya que su fuerte está en los nuevos paradigmas que maneja.</p>
+                            <br>
+                            <p>Cosas como la asincronía, la orientación a eventos y el paralelismo… lo convierten rápidamente en uno de los entornos de desarrollo más rápido.</p>
+                            <br>
+                            <p>Que fuera multiplataforma, se basará en el motor V8 de Google e incluyera un gestor de paquetes tan evolucionado como NPM, hacen de Node.js una herramienta ideal para hacer cosas tan diversas como aplicaciones de red, automatización de tareas, etc…</p>
+                            <br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/1/1176.png" alt="">
+                                <div>
+                                <h3 class="push2"><a href="https://iojs.org/es/">IO.js</a></h3>
+                            <br>
+                            <p class="push2">Y no tardaron mucho en llegar los <a href="https://twitter.%20com/hashtag/jsDrama?src=hash">#jsDramas</a> cuando la comunidad de Nodejs decide separarse en dos, IO .JS y Nodejs</p>
+                            <br>
+                            <p  class="push2">Creando una brecha que muchos consideraron insalvable. Al final Node.js reabsorbe a IO.js y acepta todos los cambios y la evolución que se deseaba originalmente.</p>
+                        </div>    
+                        </div>
+                            <br>
+                            <p>A su vez, Node.js crea un peculiar efecto de absorción y fusionamiento de roles entre el frontEnd y backEnd, ya que ahora no existe una barrera de lenguaje real entre el back y el front. Solo es necesario aprender Node.js para entrar en el mundo del back.</p>
+                            <br>
+                            <p>Como consecuencia se crean nuevos developers de JavaScript, a los que cada vez más, se les exige conocer y manejarse con Node.js.  </p>
+                            <br>
+                            <h2>Revolución… ¡Revolución!</h2>
+                            <br>
+                            <div class="dflex">
+                                <img height="60px" width="60px" src="https://cdn-icons-png.flaticon.com/128/1245/1245149.png" alt="">
+                                <h3 class="push2 push5">Lecturas recomendadas:</h3>
+                            </div>
+                            <br>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=sujZg7jwKdk"> History of Gnu, Linux, Free and Open Source Software (Revolution OS)</a></li>
+                                <li><a href="http://agilemanifesto.org/iso/es/">Platform as a service (PaaS)</a></li>
+                                <li><a href="http://agilemanifesto.org/iso/es/"> Manifiesto por el Desarrollo Ágil del Software</a></li>
+                               </ul>
+                        </div>
+                        <div class="pie">
+                            <strong>18</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel10-->
+             <div id="p10" class="papel">
+                <div class="frente">
+                    <div class="encabezado">
+                        <br><br>
+                        <p>A lo largo de estos años, muchas cosas han cambiado en el mundo del desarrollo del software.</p>
+                        <br>
+                        <p>Para empezar se crearon nuevas maneras de entender el entorno de desarrollo. Ya no solo basta con crear nuestro código y subirlo al servidor <a href="https://es.wikipedia.org/wiki/File_Transfer_Protocol"> vía FTP </a>sin más</p>
+                        <img height="100px" class="push" src="https://miamioh.edu/_files/images/it-services/news-articles/2017/08/dev-graphic.png" alt="">
+                        <p>Ahora es importante seguir una filosofía de desarrollo más compleja, donde debemos usar un <a href="https://es.wikipedia.org/wiki/Control_de_versiones">control de versiones</a> como <a href="https://git-scm.com/">Git.</a></p>
+                        <br>
+                        <p>Nuestro entorno local ya no se conectará directamente al servidor de producción para subir los cambios en los proyectos, pasaremos primero por el entorno de testing, y una vez sepamos que todo funciona como debería, será subido a producción.</p>
+                        <br>
+                        <p>Las subidas a producción, deberán de ser frecuentes, ya no será necesario tener una release completa para hacer subidas a producción.</p>
+                        <br>
+                        <p>Entramos en la era del desarrollo ágil, la programación extrema y la computación en la nube. El tener servidores físicos en los sótanos de la empresa, se eliminará a favor de sistemas como Google Cloud, Amazon Web Services, Heroku u otros proveedores.</p>
+                        <br>
+                        <p>Todo será mucho más modular y escalable, todo estará mucho más interconectado, el login social cambiará la manera de autentificarnos.</p>
+                        <br>
+                        <p>Ya no reinventaremos la rueda tan a menudo y dependeremos mucho más de APIs y sistemas de terceros.</p>
+                        <br>
+                        <p>El <a href="https://es.wikipedia.org/wiki/Software_libre">software libre</a> dejó de sonar a cosa rara.</p>
+                        <br>
+                        <p>La mayor parte de los servidores de internet montarán distribuciones Linux. La colaboración entre desarrolladores de manera altruista bajo el sistema del software libre, creará algunos de los lenguajes, librerías y sistemas más sólidos.</p>
+                        <br>
+                        <p>Esta idea de libertad, se extiende como la pólvora y da pie a extender estas filosofías a otras áreas como a la cultura con licencias Creative Commons o al mundo del hardware con el Hardware libre.</p>
+                    </div>
+                    <div class="pie2">
+                        <strong>19</strong>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p>Al tener un entorno libre del que nutrirse muchos desarrolladores empiezan a innovar. Rápidamente la comunidad les sigue, se van constituyendo nuevos ciclos y formatos de innovación.</p>
+                            <br>
+                            <p>Algunas empresas, poco a poco, verán este valor y migrarán de un modelo más tradicional de software privativo a uno más abierto y libre.</p>
+                            <br>
+                            <p>Cambiarán muchas cosas, XML será destronado y JSON será el nuevo rey. Se idearán nuevas maneras de gestionar el tiempo real como WebSockets.</p>
+                            <br>
+                            <p>Surgirán iniciativas con ideas tan potentes como Nobackend, que plantearán nuevos paradigmas, pero sobretodo la innovación y la creatividad empujarán sobre manera -como nunca antes- el mundo del software.</p>
+                            <br>
+                            <p>Precisamente la innovación pasará a formar parte del ADN de nuevos tipos de empresas como las Startups. El MVP y el prototipado serán un concepto mainstream al igual que la metodología <a href="https://es.wikipedia.org/wiki/Lean_startup">Lean Startup.</a></p>
+                        </div>
+                        <div class="pie">
+                            <strong>20</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel11-->
+             <div id="p11" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="marco-superior">
+                            <br><br>
+                            <h1 class="push">Capítulo 2 - Hola Mundo</h1>
+                        </div>
+                        <div class="encabezado">
+                            <br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/1/1176.png" alt="">
+                                <div>
+                                <h3 class="push2">Fiero veterano </h3>
+                            <br>
+                            <p class="push2">En este capítulo, hablaremos sobre como es la computación y que se espera de un desarrollador. Si ya dominaís algun lenguaje de programación o sencillamente quiereís empezar ya mismo con JavaScript… pasad al siguiente capítulo. </p>
+                                </div>    
+                            </div>
+                            <br>
+                            <h2>Un mundo de máquinas</h2>
+                            <br>
+                            <p>Seguramente, cuando abras este libro tendrás un objetivo sencillo en mente, aprender JavaScript.</p>
+                            <br>
+                            <p>Pero antes de hablar de JavaScript, no es mala idea emplear un poco de tiempo, en aprender algunas cosas de interés sobre el entorno de JavaScript.</p>
+                            <br>
+                            <p>JavaScript es un lenguaje más de tantos que existen. Cada lenguaje tiene unas características y unas propiedades especiales que lo hacen más o menos apto para según que objetivos. Eso explica la existencia de tantísimos lenguajes de programación, y que los programadores nos repartamos en función de los lenguajes que utilizamos y manejamos.</p>
+                            <br>
+                            <p>Los lenguajes de programación y los que utilizamos los humanos no son tan diferentes en cuanto al objetivo principal, que es comunicarnos. En el caso de los lenguajes de los humanos la idea principal es que podamos comunicarnos y transmitir nuestras ideas entre los individuos. Cuando se habla de lenguajes de programación, el objetivo es lograr establecer una comunicación fluida con una máquina/sistema/protocolo/etc…</p>
+                            <br>
+                            <p>Al igual que en los lenguajes humanos encontramos muchas similitudes entre si en cuanto a estructuración, los lenguajes de programación suelen compartir una base común en cuanto a estructuras y funcionalidades que toda máquina es capaz de comprender, tales como funciones, bucles, variables, condicionales, etc…</p>
+                            <br>
+                            <p>La parte más pura de la computación, lógica, abstracción y la capacidad de sintetizar una solución para un problema, en sentencias que una máquina pueda entender y ejecutar.</p>
+                            <br>
+                            <p>Los ordenadores son <a href="https://es.wikipedia.org/wiki/Computadora">máquinas multipropósito</a> que pueden ser programadas. En función de su programación pueden hacer más o menos cosas y hacerlas de una forma concreta.</p>
+                            <br>
+                            <p>Por si mismas, las máquinas no son capaces de razonar y tomar sus propias decisiones, excepto, que hablemos en el ámbito de la inteligencia artificial, donde se busca entre otras cosas lograr máquinas y sistemas que aprendan.</p>
+                         </div>
+                        <div class="pie2">
+                            <strong>21</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p>Por lo general, en computación siempre hablaremos de sistemas dentro de sistemas y que han sido programados… es como una pirámide que cobra todo su sentido cuando por fin  tenemos cada uno de sus componentes correctamente alineados. </p>
+                            <br>
+                            <p>JavaScript es un lenguaje de programación de alto nivel, que se ejecuta dentro de los navegadores, a excepción de Node.js. Esto quiere decir que nuestro código necesita mucho código previo para funcionar.</p>
+                            <br>
+                            <p>Por ejemplo, un sistema operativo (Linux, Windows, Mac..) que gestiona programas como el navegador (Firefox, Chrome, IE, etc…) y estos a su vez gestionan cómo se representan los  entornos visuales en las pantallas, los sonidos, etc…</p>
+                            <br>
+                            <p>Sabiendo todo esto, al final del día nuestro código puede sufrir fluctuaciones a la hora de ejecutarse en función del entorno que estemos usando, por suerte, el navegador gestionará de manera automática gran parte de todo esto, pero aún así podemos sufrir gran cantidad de variaciones debido a que cada navegador “interpreta” nuestro JavaScript lo mejor que puede, aunque no de la misma forma.</p>
+                            <br>
+                            <p>Uno de nuestros principales cometidos, será hacer que nuestro código sea capaz de lograr los objetivos que nos proponemos independientemente de la plataforma donde se vaya a  ejecutar, aunque a esto ya estaréis familiarizados con el día a día desarrollando con HTML5  y CSS3.</p>
+                            <br>
+                            <h2>Pensar como un programador</h2>
+                            <br>
+                            <div class="dflex">
+                                <img height="60px" width="60px" src="https://cdn-icons-png.flaticon.com/128/1245/1245149.png" alt="">
+                                <h3 class="push2 push5">Lecturas recomendadas:</h3>
+                            </div>
+                            <br>
+                            <ul>
+                                <li><a href="http://www.ybrikman.com/writing/2014/05/19/dont-learn-to-code-learn-to-think/">Don’t learn to code. Learn to think by Yevgeny Brikman</a></li>
+                                <li><a href="https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux?language=es"> Linus Torvalds: La mente detrás de Linux</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=nKIu9yen5nc"> What Most Schools Don’t Teach by code.org</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=FpMNs7H24X0">  Computer science is for everyone by Hadi Partovi</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=PwSyjz1off4">The early days by Steve Wozniak</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=6VakF2hZFPQ"> Hack your life in 48 hours by Dave Fontenot</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=xfBWk4nw440">You Should Learn to Program by Christian Genco</a></li>
+                               </ul>
+                               <br>
+                               <p>Programar es un arte y el programador debería ser un artesano, aunque también existen otros puntos de vista menos románticos sobre nuestra profesión.</p>
+                               <br>
+                               <p>Las máquinas y los sistemas son geniales haciendo una única cosa, seguir pasos…. La</p>
+                        </div>
+                        <div class="pie">
+                            <strong>22</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel12-->
+             <div id="p12" class="papel">
+                <div class="frente ">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p>responsabilidad de todo programador en relación a las máquinas es ser capaz de guiarlas con las instrucciones más precisas. </p>
+                            <br>
+                            <p>A diferencia de un artesano convencional, el de código, puede evaluar la belleza de un código basándose en ciertos criterios. No se trata solo de que la máquina logre el objetivo deseado, se trata también de no llegar a ese objetivo con un código feo, desastroso e ineficiente.</p>
+                            <br>
+                            <p>En programación existen criterios como consistencia, rendimiento, integridad, complejidad ciclomática, nivel de abstracción, etc… Estos criterios determinan la calidad de un código. </p>
+                            <br>
+                            <p>Esto a su vez nos lleva al análisis de nuevos problemas relacionados con la legibilidad y el  mantenimiento de nuestro código. El balance es muy complicado y por ello un programa jamás llega a ser perfecto, recuerda que al final, el programador sigue siendo humano… </p>
+                            <br> <br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/1/1176.png" alt="">
+                                <div>
+                                <h3 class="push2">Programar requiere aprender una nueva forma de pensar</h3>
+                            <br>
+                            <p class="push2">Mucha gente omite este paso y acaba perdida en un infinito desierto de agonía y desesperación cuando se estancan… y se ven incapaces de resolver ciertas situaciones que surgen en el día a día de un programador. </p>
+                            </div>    
+                            </div>
+                            <br> <br>
+                            <p>Cosas como la <a href="https://es.wikipedia.org/wiki/Metaprogramaci%C3%B3n">metaprogramación</a> y el pensamiento abstracto serán dos objetivos loables a los que debes aspirar como buen artesano del código.</p>
+                            <br>
+                            <p>No te preocupes querido lector, porque tus hijos no sufrirán este tormento, ya que están aprendiendo programación de la manera más ágil y divertida, centrándose en el pensamiento abstracto y dejando los lenguajes de programación para más adelante… cosas como Scratch o Bitbloq se encargan de ayudarles con esta ardua tarea de una manera amena.</p>
+                            <br>
+                            <p>Pero para los adultos es otra historia… por eso, antes de aterrizar en el siguiente capítulo, deberíamos emplear un poco más de tiempo aprendiendo las bases de la programación con pseudocódigo.</p>
+                            <br>
+                            <p>Las máquinas procesan el mundo de manera binaria, no existen las escalas de grises, por eso el programador debe asumir que tiene que interiorizar y empatizar con la única forma de ver  el mundo que tienen las máquinas. Debe aprender a pensar de una manera más “binaria”, esto traerá consigo beneficios más allá de la computación, como es aprender a resolver problemas complejos, dividir tareas, etc… y así aumentará enormemente su creatividad. Aprenderá de los errores como nunca antes, tendrá nuevos retos cada día y cuando los supere, la satisfacción será increíble…</p>
+                            <br>
+                            <p>Aprender a programar no tiene edad.</p>
+                        </div>
+                        <div class="pie2">
+                            <strong>23</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br>
+                            <h2>Pseudocódigo</h2>
+                            <br>
+                            <p>El <a href="https://es.wikipedia.org/wiki/Pseudoc%C3%B3digo">pseudocódigo</a> nos permite aislarnos del lenguaje sobre el que finalmente deseamos programar y nos centra en la base lógica más pura de la programación, lo que nos permite adentrarnos en el problema en sí y en su resolución… sin tener que preocuparnos de particularidades de cada lenguaje y su entorno de ejecución. </p>
+                            <br>
+                            <p>No vamos a hablar de todas las posibilidades que nos aporta el pseudocódigo, pero si hablaremos de algunas estructuras que resultarán interesantes para nuestro aprendizaje orientado a JavaScript.</p>
+                            <br>
+                            <p>Aunque no es necesario realizar nuestro pseudocódigo en un entorno específico, existen programas como <a href="http://pseint.sourceforge.net/">PseInt</a>, que intentan dotar de un entorno completo a nuestro pseudocódigo.</p>
+                            <br>
+                            <p>Por todo ello, los ejemplos que veremos en este capítulo están basados en la sintaxis y funcionamiento de PseInt. También incluyo su equiparación con JavaScript a modo de referencia. </p>
+                            <br> <br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/497/497789.png" alt="">
+                                <div>
+                                <h3 class="push2"><b>¡No te agobies!</b></h3>
+                            <p class="push2">Es normal que haya cosas que no entendamos de JavaScript en los próximos ejemplos, para eso tenemos el resto del libro… </p>
+                            </div>    
+                            </div>
+                            <br> <br>
+                            <h3>Variables</h3>
+                            <br>
+                            <p>Cuando programamos, podemos crear variables que son pequeños espacios de memoria a los que ponemos un nombre como “nombre_usuario”, y que nos permite almacenar datos que posteriormente podremos modificar si deseamos.</p>
+                            <br>
+                            <ul>
+                                <li>En Pseudocódigo:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8">//Esto es un comentario</span><br>
+                                    <span class="formatocodigo">2. </span>   <span class="text8">nombreUsuario = "Pepe"</span><br>
+                                    <span class="formatocodigo">3. </span>   <span class="text8">nombreOtroUsuario = "Roberta"</span><br>
+                                </li>
+                                <br>
+                                <li>Equiparación en JavaScript:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 cyan">//Esto es un comentario</span><br>
+                                    <span class="formatocodigo">2. </span> <span class="text8 green">var</span>  <span class="text8">nombreUsuario = </span> <span class="text8 red"> "Pepe"</span><span class="text8">;</span><br>
+                                    <span class="formatocodigo">3. </span>  <span class="text8 green">var</span> <span class="text8">nombreOtroUsuario = </span> <span class="text8 red">"Roberta"</span><span class="text8">;</span><br>
+                                </li>
+                            </ul>                        
+                        </div>
+                        <div class="pie">
+                            <strong>24</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel13-->
+             <div id="p13" class="papel">
+                <div class="frente">
+                    <div class="frente-content"> 
+                        <div class="encabezado">
+                            <br><br>
+                           <h2>Interacción con el usuario</h2>
+                           <br>
+                           <p>Podemos pedir al usuario que nos facilite algún tipo de dato, almacenarlo en una variable y también podemos mostrarle información.</p>
+                           <br>
+                           <ul>
+                            <li>En Pseudocódigo:
+                                <br><br>
+                                <span class="formatocodigo">1. </span> <span class="text8">// Le mostraremos el siguiente mensaje </span><br>
+                                <span class="formatocodigo">2. </span>   <span class="text8">Escribir "hola usuario! ¿Cómo te llamas?" </span><br>
+                                <span class="formatocodigo">3. </span>   <span class="text8"> </span><br>
+                                <span class="formatocodigo">4. </span>   <span class="text8">// Almacenamos su respuesta en una variable</span><br>
+                                <span class="formatocodigo">5. </span>   <span class="text8">Leer nombreUsuario </span><br>
+                            </li>
+                            <br>
+                            <li>Equiparación en JavaScript:
+                                <br><br>
+                                <span class="formatocodigo">1. </span> <span class="text8 cyan">// Le mostraremos el siguiente mensaje</span><br>
+                                <span class="formatocodigo">2. </span> <span class="text8 green">var</span>  <span class="text8">mensaje = </span> <span class="text8 red">  "hola usuario! ¿Cómo te llamas?"</span><span class="text8">;</span><br>
+                                <span class="formatocodigo">3. </span>  <span class="text8 green">var</span> </span><span class="text8">nombreUsuario = prompt(mensaje);</span><br>
+                                <span class="formatocodigo">4. </span> <span class="text8 cyan"></span><br>      
+                                <span class="formatocodigo">5. </span> <span class="text8 cyan">// Almacenamos su respuesta en una variable</span><br>                          
+                            </li>
+                        </ul>      
+                        <br>
+                        <p>Como podemos ver… a la hora de equiparar este mensaje en JavaScript, he metido ciertos cambios para agilizar el <a href="https://es.wikipedia.org/wiki/Algoritmo">algoritmo</a> y adaptarlo al contexto de JavaScript en el navegador.</p>
+                        <br>
+                        <h3>Estructuras condicionales  </h3>
+                        <br>
+                        <p>Cuando necesitamos que el sistema tome decisiones, debemos plantearle las múltiples
+                            opciones en una estructura condicional concreta.</p>
+                        <br>
+                        <p>Para que la lógica del sistema pueda decidir, necesitamos reducir todo a comparaciones
+                            susceptibles de devolver un valor booleano (verdadero o falso).</p>
+                        <br>
+                        <p><b>Por ejemplo:</b></p>
+                        <br>
+                        <ul>
+                            <li>Operaciones matemáticas
+                                <br>
+                                <b class="push11">–</b> 1+1 = 2
+                                <br>
+                                <b class="push11">–</b> 5 es mayor que 3
+                                <br>
+                                <b class="push11">–</b> -5 es menor que cero
+                            </li>
+                            <br>
+                            <li>Operaciones matemáticas
+                                <br>
+                                <b class="push11">–</b>La variable “nombreUsuario” es igual a “Pepe”
+                                <br>
+                                <b class="push11">–</b>La variable “nombreUsuario” no esta vacía
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="pie2">
+                            <strong>25</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br>
+                            <br>
+                           <p>A la hora de representar las opciones. PseInt nos da dos opciones principales. La estructura Si.. entonces y Según, la diferencia en este contexto está en función del número de opciones.</p>
+                           <br>
+                           <p><b>En el caso de Si…</b></p>
+                           <p>Entonces solo manejamos dos opciones cuando la condición se cumple, y cuando no se cumple.</p>
+                            <br>
+                            <p><b>En el caso de Según</b></p>
+                            <p>Podemos manejar multiples valores y con ello multiples opciones sobre las que el sistema deberá decidir.</p>
+                            <br>
+                            <p>Si una condición puede cumplirse en múltiples casos, el sistema se decidirá por la  primera e ignorará el resto.  </p>
+                            <br>
+                            <p><b>Si… Entonces</b></p>
+                            <br>
+                            <ul>
+                                <li>En Pseudocódigo:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8">Si 1 + 1 == 2 Entonces</span><br>
+                                    <span class="formatocodigo">2. </span>   <span class="text8 push2">Escribir "La suma es correcta" </span><br>
+                                    <span class="formatocodigo">3. </span>   <span class="text8"> Sino</span><br>
+                                    <span class="formatocodigo">4. </span>   <span class="text8 push2">Escribir "La suma es incorrecta"</span><br>
+                                    <span class="formatocodigo">5. </span>   <span class="text8"> Fin Si</span><br>
+                                </li>
+                                <br>
+                                <li>Equiparación en JavaScript:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">if </span> <span class="text8"> ( </span> <span class="text8 gray">1 + 1 === 2</span> <span class="text8"> ) { </span><br>
+                                    <span class="formatocodigo">2. </span>  <span class="text8 push2">console.log( </span> <span class="text8 red"> "La suma es correcta"</span> <span class="text8">)</span><br>
+                                    <span class="formatocodigo">3. </span>  <span class="text8">}</span> <span class="text8 green">else </span> <span class="text8">{</span><br>
+                                    <span class="formatocodigo">4. </span> <span class="text8 push2">console.log(</span> <span class="text8 red">"La suma es incorrecta"</span> <span class="text8">)</span> <br>    
+                                    <span class="formatocodigo">5. </span> <span class="text8">};</span> <br> 
+                                </li>
+                            </ul>    
+                            <br>
+                            <p><b>Según</b></p> 
+                            <br>
+                            <ul>
+                                <li>En Pseudocódigo:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8">Escribir "hola usuario! ¿Cómo te llamas?"</span><br>
+                                    <span class="formatocodigo">2. </span>   <span class="text8">Leer nombreUsuario</span><br>
+                                    <span class="formatocodigo">3. </span>   <span class="text8">Segun nombreUsuario Hacer</span><br>
+                                    <span class="formatocodigo">4. </span>   <span class="text8 push2">"Pepe":</span><br>
+                                    <span class="formatocodigo">5. </span>   <span class="text8 push4"> Escribir "Hola Pepe! Yo te conozco" </span><br>
+                                    <span class="formatocodigo">6. </span>   <span class="text8 push2"> "Lucia":</span><br>
+                                    <span class="formatocodigo">7. </span>   <span class="text8 push4"> Escribir "Hola Lucia! Yo te conozco</span><br>
+                                    <span class="formatocodigo">8. </span>   <span class="text8 push2"> De Otro Modo: </span><br>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="pie">
+                            <strong>26</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel14-->
+             <div id="p14" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <span class="formatocodigo push2">9. </span>   <span class="text8 push4"> Escribir "Eres nuevo... Bienvenido!"</span><br></li>
+                                <span class="formatocodigo push2">10. </span>   <span class="text8 push2">Fin Segun </span><br> </li>
+                               <br>
+                                <ul>
+                                <li>Equiparación en JavaScript:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var </span> <span class="text8"> nombreUsuario = prompt( </span> <span class="text8 red">"hola usuario! ¿Cómo te llamas?"</span> <span class="text8"> ) { </span><br>
+                                    <span class="formatocodigo">2. </span><br>
+                                    <span class="formatocodigo">3. </span>  <span class="text8 green">var</span> <span class="text8">(nombreUsuario) {</span><br>
+                                    <span class="formatocodigo">4. </span> <span class="text8 push2 green">case</span> <span class="text8 red">"Pepe"</span> <span class="text8">:</span> <br>    
+                                    <span class="formatocodigo">5. </span> <span class="text8">console.log(</span>  <span class="text8 red">"Hola Pepe! Yo te conozco"</span> </span> <span class="text8">);</span> <br> 
+                                    <span class="formatocodigo">6. </span> <span class="text8 green">break</span> <span class="text8">;</span> <br> 
+                                    <span class="formatocodigo">7. </span>  <span class="text8 push2 green">case</span> <span class="text8 red">"Lucía"</span> <span class="text8">:</span> <br> 
+                                    <span class="formatocodigo">8. </span> <span class="text8">console.log(</span>  <span class="text8 red">"Hola Lucía! Yo te conozco"</span> </span> <span class="text8">);</span> <br> 
+                                    <span class="formatocodigo">9. </span> <span class="text8 green">break</span> <span class="text8">;</span> <br> 
+                                    <span class="formatocodigo">10. </span> <span class="text8 green">default</span> <span class="text8">:</span> <br> 
+                                    <span class="formatocodigo">11. </span> <span class="text8">console.log(</span>  <span class="text8 red">"Eres nuevo . . . Bienvenido!"</span> </span> <span class="text8">);</span> <br> 
+                                    <span class="formatocodigo">12. </span> <span class="text8">}</span> <br> 
+                                </li>
+                            </ul>
+                            <br>
+                            <h3>Bucles</h3>
+                            <br>
+                            <p>En ocasiones nuestro algoritmo requerirá ejecutar una serie de instrucciones de manera repetitiva hasta que cierta circunstancia cambie. Esto en programación se conoce como bucles, básicamente tenemos tres tipos.</p>
+                            <br>
+                            <p>Al existir tres tipos, surge la duda de saber si realmente existen diferencias significativas entre ellos.</p>
+                            <br>
+                            <p>Como es normal existen ciertas diferencias en el manejo de las interacciones, pero todos los  bucles mantienen una estructura y funcionamiento común que se divide en dos partes:  </p>
+                            <br>
+                            <p><b>Condición</b></p>
+                            <p>Nos permite definir cual es la condición que debe cumplirse para que nuestro programa decida si hay que entrar/seguir en bucle o ignorarlo/salir.</p>
+                            <br>
+                            <p>El dominio de esta parte del bucle nos asegurará no caer en bucles infinitos o bucles que nunca serán ejecutados.</p>
+                            <br>
+                            <p><b>Instrucciones</b></p>
+                            <p>Es un conjunto de comandos que serán ejecutados una vez el bucle haya validado las condiciones.</p>
+                        </div>
+                        <div class="pie2">
+                            <strong>27</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <p><b>Tipos de bucles</b></p>   
+                            <br>
+                            <ul>
+                        <li>
+                            <p><b> While (Mientras)</b></p>
+                            <br>
+                            <p>Esta pensado para aquellos bucles que requieran de una condición lógica y no matemática para validar la iteracción.</p>
+                            <br>
+                            <div class="dflex">
+                                <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/807/807292.png" alt="">
+                                <div>
+                                <p class="push2">Aunque lógicamente podremos mezclar entre las diversas condiciones (matemáticas y lógicas).</p>
+                            </div>    
+                            </div>
+                            <br>
+                            <ul>
+                                <li>En Pseudocódigo:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8">vuelta <- 0 </span><br>
+                                    <span class="formatocodigo">2. </span>   <span class="text8">Mientras vuelta < 100 Hacer </span><br>
+                                    <span class="formatocodigo">3. </span>   <span class="text8 push2">Escribir vuelta </span><br>
+                                    <span class="formatocodigo">4. </span>   <span class="text8 push2">vuelta = vuelta + 1 </span><br>
+                                    <span class="formatocodigo">5. </span>   <span class="text8">Fin Mientras </span><br>
+                                </li>
+                                <br>
+                                <li>Equiparación en JavaScript:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var</span>  <span class="text8 ">vuelta </span> <span class="text8 gray">= 0</span> <span class="text8 ">;</span> <br>
+                                    <span class="formatocodigo">2. </span> <br>
+                                    <span class="formatocodigo">3. </span>  <span class="text8 green">while</span>  <span class="text8 ">(vuelta</span> <span class="text8 gray">< 100</span> <span class="text8 ">){ </span> <br>
+                                    <span class="formatocodigo">4. </span> <span class="text8 push2">console.log(vuelta)  </span><br>      
+                                    <span class="formatocodigo">5. </span> <span class="text8 push2">vuelta</span> <span class="text8 gray">++</span> <span class="text8 cyan">// vuelta = vuelta +1  </span><br>      
+                                    <span class="formatocodigo">6. </span> <span class="text8">}</span><br>                     
+                                </li>
+                            </ul>      
+                            </li>
+                            <br>
+                            <li>
+                                <p><b>For (Para)</b></p>
+                                <br>
+                                <p>Esta diseñado específicamente para trabajar con series de números (longitud de cadena, elementos de un array, propiedades de un objeto, etc…) y nos provee de una  estructura más sencilla para gestionar el flujo.</p>
+                                 <br>
+                                    <ul>
+                                        <li>En Pseudocódigo:
+                                            <br><br>
+                                            <span class="formatocodigo">1. </span> <span class="text8 push2">Para v_numerica<-v_inicial Hasta vuelta < 100 Con Paso vuelta = vuelta + 1 </span><br>
+                                            <span class="formatocodigo">2. </span>   <span class="text8">Hacer </span><br>
+                                            <span class="formatocodigo">3. </span>   <span class="text8 push2"> Escribir vuelta</span><br>
+                                            <span class="formatocodigo">4. </span>   <span class="text8">Fin Para  </span><br>
+                                        </li>
+                                        <br>
+                                    </ul>   
+                        </li>
+                        </ul>
+                        </div>
+                        <div class="pie">
+                            <strong>28</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel15-->
+             <div id="p15" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <ul>
+                            <ul > 
+                                <li class="push2">Equiparación en JavaScript:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">for</span> <span class="text8">(</span> <span class="text8 green">var</span> <span class="text8">vuelta</span> <span class="text8 gray">= 0</span> <span class="text8">; vuelta</span> <span class="text8 gray">< 100</span> <span class="text8">; vuelta</span> <span class="text8 gray">++</span> <span class="text8">){</span> <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8 push2">console.log(vuelta);</span> <br>
+                                    <span class="formatocodigo">3. </span>  <span class="text8">} </span><br>                            
+                                </li>
+                            <li>
+                            <br>
+                            <p><b>Do… While (Repetir… Hasta Que)</b></p>
+                            <br>
+                            <p>Este bucle funciona de una manera diferente. Altera el orden al que estamos acostumbrados, ya que primero ejecutará el código una vez y luego evaluará si debe repetirse.</p>
+                            <br>
+                            <ul>
+                                <li>En Pseudocódigo:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8">dato <- Falso </span><br>
+                                    <span class="formatocodigo">2. </span>   <span class="text8">Repetir </span><br>
+                                    <span class="formatocodigo">3. </span>   <span class="text8 push2">Escribir "Al menos una vez..."</span><br>
+                                    <span class="formatocodigo">4. </span>   <span class="text8">Hasta Que Dato == Verdadero  </span><br>
+                                </li>
+                                <br>
+                                <li>Equiparación en JavaScript:
+                                    <br><br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var</span>  <span class="text8 ">Dato </span> <span class="text8 gray">=</span> <span class="text8 green">false</span> <span class="text8 ">;</span>  <br>
+                                    <span class="formatocodigo">2. </span> <br>
+                                    <span class="formatocodigo">3. </span>  <span class="text8 green">do</span>  <span class="text8 ">{ </span> <br>
+                                    <span class="formatocodigo">4. </span> <span class="text8 push2">console.log(</span> <span class="text8 red">"Al menos una vez..."</span> <span class="text8">)</span> <br>      
+                                    <span class="formatocodigo">5. </span> <span class="text8 ">} </span> <span class="text8 green"> while</span> <span class="text8">(Dato)</span><br>                        
+                                </li>
+                            </ul>   
+                            </li>
+                            </ul>
+                            <br>
+                            <h2>Funciones o subprocesos</h2>
+                            <br>
+                            <p>Las funciones son estructuras de código que nos permiten reutilizar en gran medida nuestro código, gracias a que encapsulan instrucciones en su interior. </p>
+                            <br>
+                            <p>Las funciones pueden realizar dos acciones principales, de manera independiente o interrelacionadas.</p>
+                            <br>
+                            <p>Pueden modificar el valor de las variables que están fuera de la función (ámbito global) o retornando un nuevo valor al final de su ejecución.  </p>
+                            <br>
+                            <p>Otra de las características que hacen de las funciones estructuras muy valiosas, es el uso de  argumentos. Esto es una especie de variable que se declara junto a la ejecución y que no tiene ningún valor hasta que no llamemos a la función.</p>
+                            <br>
+                            <p>A la hora de llamar a la función podemos pasarle parámetros que son valores con los que la función podrá realizar todo tipo de operaciones.</p>
+                        </div>
+                        <div class="pie2">
+                            <strong>29</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                         <br><br>
+                         <p>Todo sistema, incluso PSeInt, dispone de funciones que han sido creadas para facilitar nuestro trabajo, como son las funciones matemáticas que nos permiten calcular, desde valores absolutos hasta logaritmos, pasando por funciones de azar para generar números aleatorios.  </p>
+                         <br>
+                         <p>También existen funciones propias según el tipo de dato con el que trabajemos, como es el caso de las cadenas de texto, donde podemos convertir su valor a números o saber la longitud total de los caracteres que lo componen, etc…</p>
+                         <br>
+                         <p>Hablaremos de todo esto en próximos capítulos.</p>
+                         <br>
+                         <h3>Operadores especiales</h3>
+                         <br>
+                         <p>En todo lenguaje de programación encontraremos ciertos operadores comunes que nos facilitarán tareas, como son:</p>
+                         <br>
+                         <p><b>Algebraicos</b></p>
+                        <p>Relacionados con operaciones matemáticas (sumar, restar, multiplicar, dividir…).</p>
+                        <br>
+                         <p><b>Relacionales</b></p>
+                         <p>Relacionados con comparaciones entre elementos (distinto a, igual que, menor que, mayor o igual que…).</p>
+                         <br>
+                         <p><b>Lógicos</b></p>
+                         <p>Permiten encadenar validaciones entre elementos. Y (conjunción) y O (disyunción). Por ejemplo: ((es usuario) Y (está registrado)) O (es un invitado). </p>
+                        </div>
+                        <div class="pie">
+                            <strong>30</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel16-->
+             <div id="p16" class="papel">
+                <div class="frente">
+                    <div class="marco-superior">
+                        <br><br>
+                        <h1 class="push">Capítulo 3 - console.log(“Hola Mundo”);</h1>
+                    </div>
+                    <div class="encabezado">
+                        <br>
+                        <h2>JSHint</h2>
+                        <br>
+                        <p>Es una herramienta clave para nuestro día a día, ya que nos permite detectar errores  comunes en el código JavaScript que desarrollemos.  </p>
+                        <br>
+                        <p>Para usuarios más avanzados es recomendable utilizar <a href="http://eslint.org/">esLint</a> , ya que nos proporciona múltiples configuraciones avanzadas</p>
+                        <br>
+                        <p>JSHint puede ser utilizado directamente desde la web o como un plugin más en tu editor  favorito.</p>
+                        <br><br>
+                        <div class="dflex">
+                            <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/1/1176.png" alt="">
+                            <h3 class="push2">Más información:</h3>
+                        </div>
+                        <div class="push9">
+                        <ul >
+                            <li class="push4 "><a href="http://jshint.com/"> JSHint Online</a></li>
+                            <li class="push4"><a href="http://jshint.com/about/"> JSHint About</a></li>
+                            <li class="push4"> <a href="https://github.com/jshint/jshint"> JSHint Repository  </a></li>
+                           </ul>
+                        </div>
+                        <br><br>
+                        <h2>Consola</h2>
+                        <br>
+                        <p>La herramienta más utilizada será la consola de JavaScript, que es una de las múltiples utilidades que nos ofrecen los navegadores para depurar nuestro código.</p>
+                        <br>
+                        <p>Si ya desarrollas habitualmente utilizando CSS y HTML, estarás familiarizado con este conjunto de herramientas y su potencial, <a href="https://developers.google.com/web/tools/chrome-devtools/"> no deberías seguir estos sencillo pasos.</a></p>
+                        <br>
+                        <p>Yo personalmente, prefiero utilizar Google Chrome aunque sin duda Mozilla Firefox, también es una buena opción para depurar y desarrollar nuestro código.</p>
+                        <br>
+                        <p>Para hacer uso de la consola… necesitamos llamar al objeto <a href="https://developer.mozilla.org/es/docs/Web/API/Console">console.</a> </p>
+                        <br><br>
+                        <div class="dflex">
+                            <img height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/1/1176.png" alt="">
+                            <h3 class="push2">Más información:</h3>
+                        </div>
+                        <div class="push9">
+                        <ul>
+                            <li class="push4 "><a href="https://twitter.com/chromedevtools?lang=es"> @ChromeDevTools en Twitter</a></li>
+                            <li class="push4"><a href="https://developer.chrome.com/devtools"> Chrome DevTools</a></li>
+                           </ul>
+                        </div>
+                        <div class="pie2">
+                            <strong>31</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <h3>Métodos destacados:</h3>
+                            <br>
+                            <p>Hacemos una recopilación simplificada de los métodos más utilizados, aunque existen muchos más. </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p class="blue"><b>.assert()</b></p>
+                                    <p>Aparece un mensaje de error en la consola si la afirmación es falsa.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var</span>  <span class="text8 ">controlador </span> <span class="text8 gray">=</span> <span class="text8 green">false</span> <span class="text8 ">;</span>  <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8 ">console.assert(controlador, </span>  <span class="text8 red") "\"controlador\" es igual a \"false\""); </span> <br>
+                                </li>
+                                <br>
+                                <li>
+                                    <p class="blue"><b> .clear()</b></p>
+                                    <p>Limpia la consola.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 ">console.clear() </span>  <br>
+                                 </li>
+                                 <br>
+                                 <li>
+                                    <p class="blue"><b> .dir()  </b></p>
+                                    <p>Retorna una lista interactiva de las propiedades de un objeto.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span>  <span class="text8 ">console.dir( </span> <span class="text8 green">document</span> <span class="text8 ">.body);  </span>  <br>
+                                </li>
+                                <br>
+                                <li>
+                                    <p class="blue"><b> .dirxml() </b></p>
+                                    <p>Retorna una representación HTML del objeto.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span>  <span class="text8 ">console.dirxml </span> <span class="text8 green">document</span> <span class="text8 ">.body);  </span>  <br>
+                                </li>
+                            </ul>
+                            <br><br>
+                            <h3>Agrupadores</h3>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p class="blue"><b> .group()</b></p>
+                                    <p>Crea un grupo de mensajes de consola.</p>
+                                 </li>
+                                <br>
+
+                                <li>
+                                    <p class="blue"><b> .groupCollapsed()</b></p>
+                                    <p>Crea un grupo de mensajes de consola minimizados por defecto.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 ">console.groupCollapsed( </span>  <span class="text8 red">"bucleFor"</span>  <span class="text8 ">);</span> <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8 green">for </span> <span class="text8 ">( </span> <span class="text8 green">var</span>  <span class="text8 "> i=100; i>0; i--){ </span> <br>
+                                    <span class="formatocodigo">3. </span> <span class="text8 push2">console.info( </span> <span class="text8 red">"Iteración numero %i"</span> <span class="text8">, i)</span><br>
+                                    <span class="formatocodigo">4. </span> <span class="text8 ">}</span>  <br>
+                                    <span class="formatocodigo">5. </span> <span class="text8 ">console.groupEnd();</span>  <br>
+                                 </li>
+                                 <br>
+                                 <li>
+                                    <p class="blue"><b> .groupEnd()</b></p>
+                                    <p>Cierra el grupo de mensajes. </p>
+                                     </li>
+                            </ul>
+                        </div>
+                        <div class="pie">
+                            <strong>32</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel17-->
+             <div id="p17" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <h3>Tablas</h3>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p class="blue"><b>  .table() </b></p>
+                                    <p>Muestra los datos dentro de una tabla.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var </span>  <span class="text8"> lenguajes = [</span> <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8">{ nombre:  </span> <span class="text8 red"> "JavaScript" </span> <span class="text8">", extension:</span>  <span class="text8 red"> ".js" </span> <span class="text8">  },</span> <br>
+                                    <span class="formatocodigo">3. </span> <span class="text8">{ nombre:  </span> <span class="text8 red"> "TypeScript" </span> <span class="text8">", extension:</span>  <span class="text8 red"> ".ts"  </span> <span class="text8">  },</span> <br>  <br>
+                                    <span class="formatocodigo">4. </span> <span class="text8">{ nombre:  </span> <span class="text8 red"> "CoffeeScript" </span> <span class="text8">", extension:</span>  <span class="text8 red">".coffee" </span> <span class="text8">  }</span> <br>
+                                    <span class="formatocodigo">5. </span> <span class="text8"> ];</span>
+                                    <span class="formatocodigo">6. </span>
+                                    <span class="formatocodigo">7. </span> <span class="text8">console.table(lenguajes); </span>
+                                    <span class="formatocodigo">8. </span> <span class="text8">console.table(lenguajes,</span> <span class="text8 red">"extension"</span> <span class="text8">); </span>                                     
+                                </li>
+                            </ul>
+                            <br>
+                            <h3>Gestión del tiempo</h3>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p class="blue"><b>  .time() </b></p>
+                                    <p>Inicia un contador en ms..</p>
+                                </li>
+                                    <br>
+                                <li>
+                                    <p class="blue"><b>  .timeEnd() </b></p>
+                                    <p>Para el contador y devuelve el resultado.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 ">console.time( </span>  <span class="text8 red"> "Medición de miArray"</span> <span class="text8 ">); </span> <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8 green">var   </span> <span class="text8"> miArray =  </span> <span class="text8 green">new Array</span>  <span class="text8"> ( </span> <span class="text8 gray"> 1000000</span> <span class="text8"> );</span> <br>
+                                    <span class="formatocodigo">3. </span> <span class="text8 green">for </span> <span class="text8">( </span> <span class="text8 green">var</span>  <span class="text8">  i = miArray.length - 1; i >= 0; i--) { </span> <br>
+                                    <span class="formatocodigo">4. </span> <span class="text8">miArray[i] =  </span> <span class="text8 green"> new Object </span> <span class="text8">();  </span> <br>
+                                    <span class="formatocodigo">5. </span> <span class="text8">  };</span> <br>
+                                    <span class="formatocodigo">6. </span> <span class="text8"> console.timeEnd(</span> <span class="text8 red"> "Medición de miArray"</span>  <span class="text8">);</span>
+                                 </li>
+                            </ul>
+                            <br>
+                            <h3>Notificadores</h3>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p class="blue"><b>.log()</b></p>
+                                    <p>Saca un mensaje por consola.</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 ">console.log( </span>  <span class="text8 red"> "Hola en formato clásico"</span> <span class="text8 ">); </span> <br>
+                                </li>
+                                    <br>
+                                    <li>
+                                        <p class="blue"><b> .info()</b></p>
+                                        <p>Saca un mensaje por consola con un estilo informativo.</p>
+                                        <br>
+                                        <span class="formatocodigo">1. </span> <span class="text8 ">console.info(</span>  <span class="text8 red"> "Hola en formato informativo"</span> <span class="text8 ">); </span> <br>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <p class="blue"><b> .warn()                                        </b></p>
+                                        <p>Saca un mensaje por consola con un estilo alerta.</p>
+                                        <br>
+                                        <span class="formatocodigo">1. </span> <span class="text8 ">console.warn(</span>  <span class="text8 red">"Hola en formato alerta"</span> <span class="text8 ">); </span> <br>
+                                    </li>
+                            </ul>
+                       
+                        </div>
+                        <div class="pie2">
+                            <strong>33</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <ul>
+                                <li>
+                                    <p class="blue"><b>   .error()                                    </b></p>
+                                    <p>Saca un mensaje por consola de error, con los mismos estilos, creando confusión.</p>
+                                    <p>No se recomienda su uso.                                    </p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 ">console.error( </span>  <span class="text8 red"> "Hola en formato error"</span> <span class="text8 ">); </span> <br>
+                                    </li>
+                            </ul>
+                            <br>
+                            <h3>Formateadores</h3>
+                            <br>
+                            <table width="200px" border="0.5px">
+                                <tr>
+                                    <td><b> Formato </b></td>
+                                    <td><b> Descripción </b></td>
+                                </tr>
+                                <tr>
+                                    <td>%s</td>
+                                    <td>Cadena</td>
+                                </tr>
+                                <tr>
+                                    <td>%d o %i </td>
+                                    <td>Número entero</td>
+                                </tr>
+                                <tr>
+                                    <td>%f</td>
+                                    <td>Decimal</td>
+                                </tr>
+                                <tr>
+                                    <td>%o</td>
+                                    <td>DOM</td>
+                                </tr>
+                                <tr>
+                                    <td>%O</td>
+                                    <td>Objeto js</td>
+                                </tr>
+                                <tr>
+                                    <td>%c</td>
+                                    <td>CSS</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <p><b>Ejemplos:</b></p>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p>%o para estructuras del DOM:</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var </span>  <span class="text8">parrafos =</span> <span class="text8 green">= document </span> <span class="text8">.getElementsByTagName(</span> <span class="text8 red">"p"</span>  <span class="text8">);  <br>                                </span>  <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8">console.log(</span> <span class="text8 red">"DOM: %o" </span> <span class="text8 ">, parrafos);</span> 
+                                </li>
+                                <br>
+                                <li>
+                                    <p>%O para objetos JS:</p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8 green">var </span>  <span class="text8">objeto = {</span> <span class="text8 red">"nombre":"Yo","Apellido":"Mismo"</span> <span class="text8">};</span> <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8">console.log(</span> <span class="text8 red">"Objeto: %O" </span> <span class="text8 ">, objeto);                                    </span> 
+                                </li>
+                                <br>
+                                <li>
+                                    <p> Usando CSS:                                    </p>
+                                    <br>
+                                    <span class="formatocodigo">1. </span> <span class="text8">console.log( </span>  <span class="text8 red">'Esto es aburrido...'</span> <span class="text8">);</span> <br>
+                                    <span class="formatocodigo">2. </span> <span class="text8">console.log(</span> <span class="text8 red">'%c Pero se puede mejorar fácilmente! ', 'background: #3EBDFF; \ 3 color: #FFF; font-size:25px;'</span> <span class="text8 ">); </span>   
+                                </li>
+                            </ul>
+                            <br>
+                            <h3>Caracteres especiales:</h3>
+                            <br>
+                            <p>Incluyendo ciertos caracteres especiales en nuestras cadenas de texto, podemos maquetar el resultado que se imprimirá por la consola.</p>
+                            <br>
+                            <ul class="push4">
+                                <li>\t Tabulador</li>
+                                <li>\' Comillas Simples</li>
+                            </ul>
+                        </div>
+                        <div class="pie">
+                            <strong>34</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel18-->
+             <div id="p18" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                            <br><br>
+                            <ul class="push4">
+                                <li> \" Comillas Dobles</li>
+                                <li>\n Salto de línea</li>
+                            </ul>
+                            <br>
+                            <span class="formatocodigo">1. </span> <span class="text8">console.log( </span>  <span class="text8 red">"Hasta aquí... todo correcto. Ahora vamos a \"tabular\":\tves? Ya\2 estamos más lejos.\n\'Otra linea ;-)\'"</span> <span class="text8">)</span> <br>
+                        </div>
+                        <div class="pie2">
+                            <strong>35</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie">
+                            <strong>36</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel19-->
+             <div id="p19" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie2">
+                            <strong>37</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie">
+                            <strong>38</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--papel20-->
+             <div id="p20" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie2">
+                            <strong>39</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie">
+                            <strong>40</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--pape21-->
+             <div id="p21" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie2">
+                            <strong>41</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie">
+                            <strong>42</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--pape22-->
+             <div id="p22" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie2">
+                            <strong>43</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie">
+                            <strong>44</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel23-->
+             <div id="p23" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie2">
+                            <strong>45</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie">
+                            <strong>46</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel24-->
+             <div id="p24" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                        
+                        </div>
+                        <div class="pie2">
+                            <strong>47</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+                            a
+                        </div>
+                        <div class="pie">
+                            <strong>48</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--papel25-->
+             <div id="p25" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>49</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+
+                        </div>
+                        <div class="pie">
+                            <strong>50</strong>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="p26" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>51</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>52</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p27" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>53</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>54</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p28" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>55</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>56</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p29" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>57</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>58</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p30" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>59</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>60</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p31" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>61</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>62</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p32" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>63</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>64</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p33" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>65</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>66</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p34" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>67</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>68</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p35" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>69</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>70</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p36" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>71</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>72</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p37" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>73</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>74</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p38" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>75</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>76</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p39" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>77</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>78</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p40" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>79</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>80</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p41" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>81</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>82</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p42" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>83</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>84</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p43" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>85</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>86</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p44" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>87</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>88</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p45" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>89</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>90</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p46" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>91</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>92</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p47" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>93</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>94</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p48" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>95</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>96</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p49" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>97</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                        <div class="pie">
+                            <strong>98</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="p50" class="papel">
+                <div class="frente">
+                    <div class="frente-content">
+                        <div class="encabezado">
+                           
+                        </div>
+                        <div class="pie2">
+                            <strong>99</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atras" id="portada3">
+                    <div class="atras-content">
+                        <div class="encabezado">
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     </div>
+
+</body>
+</html>
